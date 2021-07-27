@@ -1,0 +1,346 @@
+@charset "ISO-8859-1";
+
+.toolHeader {
+	/*Blue*/
+	/*background: #0698D3;*/
+	background: #3328b0;
+	
+}
+
+#header {
+	padding-top: 0.5%;
+	padding-left: 1%;
+	font-style: Segoe UI;
+	font-size: 20px;
+	color: #ffffff;
+	align-self: center;
+}
+
+body {
+	padding-top: 65px;
+	/* background-image: url(/meta/images/jarvis-v1.jpg); */
+	/* background-image: url(/meta/images/sthetoscope1.jpg); */
+	overflow-y: scroll;
+	/* scrollbar-face-color: #0698D3;
+	scrollbar-shadow-color: #2D2C4D;
+	scrollbar-highlight-color: #7D7E94;
+	scrollbar-3dlight-color: #7D7E94;
+	scrollbar-darkshadow-color: #2D2C4D;
+	scrollbar-track-color: #7D7E94;
+	scrollbar-arrow-color: #C1C1D1;
+	scroll-behavior: smooth; */
+}
+
+#searchDiv {
+	position: relative;
+	margin: auto;
+	width: 25%;
+	top: 40%;
+	left: 2%;
+	right: 40%;
+	border: 2px dashed darkgrey;
+	padding: 10px 10px 10px 20px;
+	border-radius: 7px;
+	background-color: #FFFFFF;
+}
+
+#filterDiv {
+	position: relative;
+	margin: auto;
+	width: 25%;
+	top: 40%;
+	left: 2%;
+	right: 40%;
+	border: 2px dashed darkgrey;
+	padding: 10px 10px 10px 20px;
+	border-radius: 7px;
+	background-color: #FFFFFF;
+}
+
+#searchDivIcon {
+	padding-left: 0.65%;
+	padding-top: 0.2%;
+	position:fixed;
+	margin: auto;
+	top: 15.5%;
+	left: 45.5%;
+	width: 2%;
+	color: #000000;
+	background-color: #FFFFFF;
+	display: none;
+}
+
+
+#filterDivIcon {
+	padding-left: 0.65%;
+	padding-top: 0.2%;
+	position:fixed;
+	margin: auto;
+	top: 15.5%;
+	left: 45.5%;
+	width: 2%;
+	color: #000000;
+	background-color: #FFFFFF;
+	display: none;
+}
+
+select#JVMType {
+	width: 35%;
+	left: 45%;
+}
+
+select#ALT-Url{
+	width: 35%;
+	left: 45%;
+}
+
+select#JVMTypeFilter {
+	width: 35%;
+	left: 45%;
+}
+
+.proceedBtn {
+	position: absolute;
+	display: inline;
+	left: 72%;
+	width: 20%;
+	height: 20px;
+	padding: 2px 1px 2px 2px;
+	font-weight: bold;
+	font-size: auto;
+	/* color: #d9d9d9; */
+	font-color: #000000;
+}
+
+.proceedFilterBtn {
+	position: absolute;
+	display: inline;
+	left: 72%;
+	width: 20%;
+	height: 20px;
+	padding: 2px 1px 2px 2px;
+	font-weight: bold;
+	font-size: auto;
+	/* color: #d9d9d9; */
+	font-color: #000000;
+}
+
+#mainDiv {
+	padding-left: 1%;
+	padding-top: 1%;
+}
+
+div#content {
+	/* left: 1%; */
+	/* display: none; */
+	width: 98%;
+	height: auto;
+	max-height: 80%;
+	overflow: auto;
+	top: 20;
+	position: fixed;
+	padding-top: 10px;
+	/* background-color: #ffffff; */
+}
+
+/* #chartContainer {
+	top: 65%;
+	position: fixed;
+	height: 25%;
+	width: 25%;
+	background: transparent;
+} */
+
+#trendContainer {
+	top: 40%;
+	position: fixed;
+	height: 50%;
+	width: 95%;
+	background: transparent;
+	overflow-x: scroll;
+}
+
+#overlay {
+  position: absolute; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background-color: rgba(0,0,0,0.5); */ /* Black background with opacity */
+  background-color: black;
+  opacity: 70%;
+  z-index: 9999; /* Specify a stack order in case you're using a different order for other elements */
+  pointer-events: none; /* Add a pointer on hover */
+  cursor: not-allowed;
+}
+
+div#resultContainer {
+	top: 50%;
+}
+
+.navbarMenu {
+	color: #FFFFFF;
+}
+
+#menuNavbar {
+	border: 2px solid white;
+}
+
+#JVMTypeShowDiv {
+	align-content: center;
+	top: 15%;
+	position: fixed;
+	display: none;
+	color: #ffffff;
+	font-family: courier;
+	min-height: 3%;
+	max-width: auto;
+}
+
+.footer-bottom {
+	background-color: #000000 !important;
+	height: 40px;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	margin: 0px;
+	font-size: 12px;
+}
+
+.custom-footer {
+	color: white;
+	padding-top: 10px;
+}
+
+.footerp p {
+	font-family: 'Gudea', sans-serif;
+}
+.copyright {
+	color: #ffffff;
+	line-height: 0px;
+	min-height: 30px;
+	padding: 10px 0;
+	text-align: left;
+}
+
+.design {
+	color: #ffffff;
+	text-align: right;
+	pointer: auto;
+}
+
+.design a {
+	color: #fff;
+}
+
+h3.mfcTypeName {
+	display: inline;
+}
+h3 {
+	font-size: 20px;
+}
+
+#responsePre {
+	height: auto;
+    max-height: 300px;
+    overflow: auto;
+}
+
+#chartModal {
+	height: auto;
+}
+
+#checkNow {
+	max-height: 65%;
+    overflow: auto;
+}
+
+#uploadPane {
+	display: none;
+	position : relative;
+}
+
+#imageModalDialog {
+	top: 5%;
+	height: 90%;
+	width: auto;
+}
+
+#imageModalContent {
+	height: 100%;
+	width: auto;
+}
+
+#errModalDialog {
+	top: 20%;
+}
+
+#emailModal {
+	top: 40%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block; /* remove extra space below image */
+}
+
+.imageShowDiv {
+	width: auto;
+	height: 100%;
+}
+
+#removeFile {
+	cursor: pointer;
+}
+
+img.carouselImage {
+	max-height: 325px;
+}
+
+#quotesCarouselCont {
+	width: 80%;
+}
+
+#heatMapContainer {
+	max-height: 300px;
+	overflow-y: scroll;
+}
+
+#headerBanner {
+	top: -23%;
+	position: fixed;
+	height:70%;
+}
+
+#headerImg {
+	display: inline;
+	position: absolute;
+	top: 47%;
+	left: 43%;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 4.3em;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.landingFont {
+	font: cursive;
+	font-size: 3em;
+    font-weight: 400;	
+}
+
+#statsModalContent {
+	height: auto;
+	width: 80%;
+}
+
+#statsModal {
+	height: auto;
+	width: auto;
+}

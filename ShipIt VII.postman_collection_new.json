@@ -1,0 +1,293 @@
+{
+	"info": {
+		"_postman_id": "1a5e5f5f-85c5-4ea2-9e1b-890d2064e74e",
+		"name": "ShipIt VII",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Ping",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:5000/ping",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"ping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Train Model",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:5000/trainModel",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"trainModel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UploadImage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "imagefile",
+							"type": "file",
+							"src": "/C:/ShipItVII/Analysis/dataset/COVID-19/27.jpeg"
+						},
+						{
+							"key": "some_text",
+							"value": "hello",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://0.0.0.0:5000/uploadImage",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"uploadImage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Prediction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "imagefile",
+							"type": "file",
+							"src": "/C:/ShipItVII/Analysis/dataset/Pneumonia/19 (2).jpeg"
+						},
+						{
+							"key": "first_name",
+							"value": "Pintu",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Dey",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "65",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "Male",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "NODATA",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.0.100:5005/uploadImage",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"100"
+					],
+					"port": "5005",
+					"path": [
+						"uploadImage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch India grph plot based on C or P",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.100:5006/getIndiaGraph?disease=Pneumonia",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"100"
+					],
+					"port": "5006",
+					"path": [
+						"getIndiaGraph"
+					],
+					"query": [
+						{
+							"key": "disease",
+							"value": "Pneumonia"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Graph of male dis for P,N,C",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.100:5007/maleDist",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"100"
+					],
+					"port": "5007",
+					"path": [
+						"maleDist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Age DIst of P,C",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.100:5007/ageDist?disease=Pneumonia",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"100"
+					],
+					"port": "5007",
+					"path": [
+						"ageDist"
+					],
+					"query": [
+						{
+							"key": "disease",
+							"value": "Pneumonia"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Graph of female dis for P,N,C",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "imagefile",
+							"type": "file",
+							"src": [],
+							"disabled": true
+						},
+						{
+							"key": "disease",
+							"value": "Pneumonia",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "last_name",
+							"value": "Dey",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "65",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "gender",
+							"value": "Male",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "location",
+							"value": "NODATA",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.0.100:5007/femaleDist",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"100"
+					],
+					"port": "5007",
+					"path": [
+						"femaleDist"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
